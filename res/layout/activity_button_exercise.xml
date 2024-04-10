@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ButtonExercise">
+
+    <Button
+        android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Close"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="151dp" />
+
+    <Button
+        android:id="@+id/changebtnbg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Changebtnbg"
+        app:layout_constraintTop_toBottomOf="@+id/changebg"
+        tools:layout_editor_absoluteX="105dp" />
+
+    <Button
+        android:id="@+id/disappear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:text="Disappear"
+        app:layout_constraintTop_toBottomOf="@+id/changebtnbg"
+        tools:layout_editor_absoluteX="113dp" />
+
+    <Button
+        android:id="@+id/taost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="Toast"
+        app:layout_constraintTop_toBottomOf="@+id/close"
+        tools:layout_editor_absoluteX="151dp" />
+
+    <Button
+        android:id="@+id/changebg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Change Background"
+        app:layout_constraintTop_toBottomOf="@+id/taost"
+        tools:layout_editor_absoluteX="70dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

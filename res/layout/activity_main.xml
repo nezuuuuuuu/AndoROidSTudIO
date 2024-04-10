@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/page2Btn"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="Layout Exercise"
+        app:layout_constraintBottom_toTopOf="@+id/Button_Exercise"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Button_Exercise"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="Button Exercise"
+        app:layout_constraintBottom_toTopOf="@+id/calculator"
+        app:layout_constraintEnd_toEndOf="@+id/page2Btn"
+        app:layout_constraintStart_toStartOf="@+id/page2Btn"
+        app:layout_constraintTop_toBottomOf="@+id/page2Btn" />
+
+    <Button
+        android:id="@+id/page5Btn"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:text="PAGE 5"
+        app:layout_constraintBottom_toTopOf="@+id/connectact"
+        app:layout_constraintEnd_toEndOf="@+id/calculator"
+        app:layout_constraintHorizontal_bias="0.465"
+        app:layout_constraintStart_toStartOf="@+id/calculator"
+        app:layout_constraintTop_toBottomOf="@+id/calculator" />
+
+    <Button
+        android:id="@+id/calculator"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="3dp"
+        android:text="Calculator"
+        app:layout_constraintBottom_toTopOf="@+id/page5Btn"
+        app:layout_constraintEnd_toEndOf="@+id/Button_Exercise"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="@+id/Button_Exercise"
+        app:layout_constraintTop_toBottomOf="@+id/Button_Exercise" />
+
+    <Button
+        android:id="@+id/connectact"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="ConnectThree"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/page5Btn"
+        app:layout_constraintHorizontal_bias="0.195"
+        app:layout_constraintStart_toStartOf="@+id/page5Btn"
+        app:layout_constraintTop_toBottomOf="@+id/page5Btn"
+        app:layout_constraintVertical_bias="0.016" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
